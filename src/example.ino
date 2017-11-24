@@ -81,12 +81,13 @@
 #include <SoftwareSerial.h>
 #include <WiFiUDP.h>
 
-
+//Settings needet for serial communication with MH-Z14A
 SoftwareSerial SerialCom (0,2); //D3, D4
 byte addArray[] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
 char dataValue[9];
 String dataString = "";
 
+//WiFi Settings
 const char* ssid = "Your SSID";
 const char* password = "Your PW";
 
